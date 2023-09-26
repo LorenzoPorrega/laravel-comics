@@ -7,7 +7,8 @@
   <link rel="icon"type="image/x-icon" href="https://boolean.careers/favicon/favicon.ico">
   @vite(['resources/js/app.js', 'resources/scss/app.scss'])
 </head>
-<body>
+<body class="position-relative">
+  @include('partials.header')
   <main>
     @yield('content')
   </main>

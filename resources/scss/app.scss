@@ -1,0 +1,42 @@
+@use 'bootstrap';
+@use './partials/_variables.scss' as *;
+
+body{
+  margin-top: 130px;
+}
+
+.bg-custom-primary{
+  background-color: $color-primary;
+}
+
+.bg-custom-secondary{
+  background-color: $color-secondary;
+}
+
+.nav-bar-top-banner{
+  background-color: $color-primary;
+  height: 25px;
+  width: 100%;
+}
+
+.home-jumbo{
+  .background-image{
+    height: 500px;
+    background-image: url('./../../public/img/jumbotron.jpg');
+  }
+  .comics-list{
+    background-color: $bg-color-comics-list;
+    .current-series-tag{
+      width: fit-content;
+      height: fit-content;
+      background-color: $color-primary;
+      left: 0;
+      top: -25px;
+    }
+    .card-img-top{
+      background-size: cover;
+      height: 200px;
+      width: 100%;
+    }
+  }
+}
