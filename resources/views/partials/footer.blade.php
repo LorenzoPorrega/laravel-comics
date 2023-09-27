@@ -60,8 +60,8 @@
                   <h4 class="title fw-bold text-white text-uppercase">{{ $menuTitle['title'] }}</h4>
                 </div>
                 <ul class="list-unstyled">
-                  @foreach ($menuTitle->sub as $singleSubTitle)
-                    <li class="sub-title">{{ $singleSubTitle['title'] }}</li>
+                  @foreach ($menuTitle['sub'] as $singleSubTitle)
+                    <li class="sub-title">{{ $singleSubTitle }}</li>
                   @endforeach
                 </ul>
               </div>
