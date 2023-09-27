@@ -107,21 +107,44 @@ body{
 }
 
 .top-footer{
-  height: 400px;
+  height:475px;
   background-image: url('../../public/img/footer-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   .footer-bg-logo{
     margin-top: -75px;
+    transform: scale(125%);
   }
   .title-box{
     height: 50px;
     .title{
       color: white;
+      font-size: 1.25rem;
     }
   }
-  
   .sub-title{
     color: rgb(151, 151, 151);
+    text-decoration: none;
+    font-size: .9rem;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  .copyright-notice{
+    color: rgb(151, 151, 151);
+    font-size: .9rem;
+  }
+}
+.bottom-footer{
+  height: 75px;
+  background-color: $color-secondary;
+  button{
+    background-color: transparent;
+    &:hover{
+      background-color: $color-primary;
+    }
+  }
+  h5{
+    color: $color-primary;
   }
 }
