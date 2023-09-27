@@ -1,8 +1,9 @@
 @use 'bootstrap';
+@use "@fortawesome/fontawesome-free/css/all.min.css";
 @use './partials/_variables.scss' as *;
 
 body{
-  margin-top: 130px;
+  margin-top: 115px;
 }
 
 .bg-custom-primary{
@@ -13,16 +14,54 @@ body{
   background-color: $color-secondary;
 }
 
-.nav-bar-top-banner{
-  background-color: $color-primary;
-  height: 25px;
-  width: 100%;
+.navbar{
+  padding-top: 25px;
+  .nav-bar-top-banner{
+    background-color: $color-primary;
+    height: 25px;
+    width: 100%;
+    .container{
+      height: 25px;
+      .row{
+        height: 25px;
+        span, div{
+          height: 25px;
+          font-size: 0.9rem;
+          width: fit-content;
+          i{
+            height: 19px;
+            padding-left: 1px;
+          }
+        }
+      }
+    }
+  }
+  .navbar-collapse{
+    height: 90px;
+    padding: 0;
+    .navbar-nav{
+      height: 90px;
+      padding: 0;
+      .nav-link{
+        padding: 0 8px;
+        &:hover{
+          border-bottom: 5px solid $color-primary;
+          padding-top: 5px;
+        }
+        a{
+          height: 90px;
+        }
+      }
+    }
+  }
 }
 
 .home-jumbo{
   .background-image{
-    height: 500px;
+    height: 550px;
     background-image: url('./../../public/img/jumbotron.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .comics-list{
     background-color: $bg-color-comics-list;
@@ -38,5 +77,51 @@ body{
       height: 200px;
       width: 100%;
     }
+  }
+}
+
+.menu-banner{
+  height: 150px;
+  background-color: $color-primary;
+  .container{
+    height: 100%;
+    .menu-col{
+      width: fit-content;
+    }
+    .icon-box{
+      height: 40px;
+      width: fit-content;
+      img{
+        height: 100%;
+      }
+    }
+    p{
+      text-wrap:wrap;
+      font-size: 0.8rem;
+      text-decoration: none;
+      &hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.top-footer{
+  height: 400px;
+  background-image: url('../../public/img/footer-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  .footer-bg-logo{
+    margin-top: -75px;
+  }
+  .title-box{
+    height: 50px;
+    .title{
+      color: white;
+    }
+  }
+  
+  .sub-title{
+    color: rgb(151, 151, 151);
   }
 }
